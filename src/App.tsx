@@ -8,7 +8,6 @@ import JournalPage from './pages/JournalPage';
 import ResourcesPage from './pages/ResourcesPage';
 import SettingsPage from './pages/SettingsPage';
 import InfoPage from './pages/InfoPage';
-import CompanionPage from './pages/CompanionPage';
 import DisclaimerModal from './components/DisclaimerModal';
 import { useStore } from './store';
 
@@ -37,10 +36,6 @@ function App() {
                   <Route path="/resources" element={<ResourcesPage />} />
                   <Route path="/settings" element={<SettingsPage />} />
                   <Route path="/info" element={<InfoPage />} />
-                  <Route 
-                    path="/companion" 
-                    element={<CompanionPage />}
-                  />
                   <Route path="*" element={<Navigate to="/chat" replace />} />
                 </Routes>
               </Layout>

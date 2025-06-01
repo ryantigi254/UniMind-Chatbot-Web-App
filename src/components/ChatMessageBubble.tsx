@@ -13,7 +13,7 @@ const ChatMessageBubble: React.FC<ChatMessageBubbleProps> = memo(({ message }) =
 
   return (
     <div
-      className={`flex gap-4 mb-6 ${
+      className={`flex gap-4 ${
         isUser ? 'flex-row-reverse' : ''
       }`}
     >
@@ -23,12 +23,12 @@ const ChatMessageBubble: React.FC<ChatMessageBubbleProps> = memo(({ message }) =
           <AlertTriangle className="w-6 h-6 text-red-500" />
         </div>
       )}
-      <div className="flex-1">
+      <div className={`flex-1 ${isUser ? 'flex justify-end' : ''}`}>
         <div
           className={`
             ${
               isUser
-                ? 'bg-primary-500 text-white ml-auto'
+                ? 'bg-primary-500 text-white'
                 : isError
                 ? 'bg-red-100 dark:bg-red-900/20 text-red-600 dark:text-red-400'
                 : 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white'

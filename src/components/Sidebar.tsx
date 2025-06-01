@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, BarChart2, Book, Mic, History, BookOpen, Plus } from 'lucide-react';
+import { MessageSquare, BarChart2, Book, History, BookOpen, Plus } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useStore } from '../store';
 import { Chat } from '../types';
@@ -94,7 +94,6 @@ const Sidebar: React.FC = () => {
     { path: '/', icon: <MessageSquare className="h-5 w-5" />, label: 'Chat' },
     { path: '/mood', icon: <BarChart2 className="h-5 w-5" />, label: 'Mood Tracker' },
     { path: '/journal', icon: <Book className="h-5 w-5" />, label: 'Journal' },
-    { path: '/companion', icon: <Mic className="h-5 w-5" />, label: 'Companion' },
     { path: '/resources', icon: <BookOpen className="h-5 w-5" />, label: 'Resources' },
   ];
 
