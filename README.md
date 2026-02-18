@@ -67,6 +67,7 @@ UniMind Web provides a user-friendly interface built with React and Supabase. Us
 
 1.  **Prerequisites**:
     *   Node.js (LTS version recommended, e.g., v18 or v20)
+    *   Python 3 (for creating the local virtual environment)
     *   `npm` or `yarn`
     *   Git
 
@@ -76,14 +77,21 @@ UniMind Web provides a user-friendly interface built with React and Supabase. Us
     cd unimind
     ```
 
-3.  **Install Dependencies**:
+3.  **Create and Activate the Virtual Environment**:
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+    Run all project commands from an activated `.venv` shell.
+
+4.  **Install Dependencies**:
     ```bash
     npm install
     # or
     yarn install
     ```
 
-4.  **Set Up Environment Variables**:
+5.  **Set Up Environment Variables**:
     *   Create a file named `.env` in the root of the project.
     *   Add the following variables, replacing the placeholder values with your actual Supabase and hCaptcha credentials:
         ```dotenv
@@ -96,13 +104,17 @@ UniMind Web provides a user-friendly interface built with React and Supabase. Us
 
 ## :arrow_forward: Running the Application
 
-1.  **Start the Development Server**:
+1.  **Activate the Virtual Environment** (every new terminal session):
+    ```bash
+    source .venv/bin/activate
+    ```
+2.  **Start the Development Server**:
     ```bash
     npm run dev
     # or
     yarn dev
     ```
-2.  Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:5173`).
+3.  Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:5173`).
 
 ## :link: Relationship to Other Projects
 
